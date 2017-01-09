@@ -1,0 +1,134 @@
+body {
+	font-family: 'Autour One';
+	font-size: 12px;
+
+}
+
+.main-header {
+	background-color: #ffd6cc;
+	background-size: cover;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	height: 50vh;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.hello_img {
+	width: 10%;
+	display: block;
+	margin-left: 2rem;
+	margin-top: 1rem;
+	width: 25%;
+}
+
+h1 {
+	font-size: 40pt;
+}
+
+#menu {
+	width:400px;
+	margin:0 auto;
+	padding:0;
+	list-style-type:none;
+	font-size: 12pt;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+#menu:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+
+#menu > li {
+	float:left;
+}
+#menu > li > a {
+	text-decoration:none;
+	color:#666666;
+	display: block;
+	height: 100%;
+	text-align: center;
+	padding: 15px;
+}
+
+#menu > li:first-child {
+	width:25%;
+}
+
+/* drugi element - li - elementu o identyfikatorze menu */
+#menu > li:first-child + li {
+	width:25%;
+}
+
+/* trzeci element - li - elementu o identyfikatorze menu */
+#menu > li:first-child + li + li {
+	width:25%;
+}
+
+/* czwarty element - li - elementu o identyfikatorze menu */
+#menu > li:first-child + li + li + li {
+	width:25%;
+}
+
+/* tło buttona i kolor liter jak sie najedzie na buttona */
+#menu > li > a:hover {
+	color:#ffd6cc;
+	background-color:#666666;
+}
+
+#scroll a {
+	padding-top: 60px;
+}
+#scroll a span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: sdb04 2s infinite;
+	animation: sdb04 2s infinite;
+	box-sizing: border-box;
+}
+@-webkit-keyframes sdb04 {
+	0% {-webkit-transform: rotate(-45deg) translate(0, 0);}
+	20% {-webkit-transform: rotate(-45deg) translate(-10px, 10px);}
+	40% {-webkit-transform: rotate(-45deg) translate(0, 0);}
+}
+@keyframes sdb04 {
+	0% {transform: rotate(-45deg) translate(0, 0);}
+	20% {transform: rotate(-45deg) translate(-10px, 10px);}
+	40% {transform: rotate(-45deg) translate(0, 0);}
+}
+
+
+.hello {
+	font-size: 18px;
+	text-align: center;
+	color: #666666;
+
+}
+
+.mydescription {
+	position: top;
+}
+.mytable {
+	border-collapse: collapse;
+
+}
+
+th {
+	height: 50px;
+}
+
+tbody {
+	width: 80%;
+}
